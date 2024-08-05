@@ -1,0 +1,391 @@
+/* 
+Les différentes couleurs utilisés:
+- Background = rgb(0,0,37)
+- Background nav = rgb(16,0,59)
+- Border nav = rgb(37, 0, 138)
+- Bouton nav hover = rgb(200, 180, 255)
+- Flèche slides = rgba(255, 255, 255, 0.521);
+*/
+
+html, body {
+    background-color: rgb(0,0,37);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+---------------------------------------------------
+NAV
+---------------------------------------------------
+*/
+
+nav {
+    background-color: rgba(16, 0, 59, 0.61);
+    backdrop-filter: blur(5px);
+    border-bottom: 0.1vw solid rgb(37, 0, 138);
+
+    z-index: 2;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav #title {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    font-size: 1vw;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0vw 0.7vw;
+    transition: color 0.25s ease-in-out;
+}
+nav a:hover {
+    transition-delay: 0.025s;
+    color: rgb(200, 180, 255);
+}
+
+.nav-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 90vw;
+
+    padding: 1vw 0vw 1vw 0vw;
+}
+
+#nav-button {
+    display: none;
+}
+
+#nav-elements-mobile {
+    display:  none;
+}
+/*
+---------------------------------------------------
+FIN NAV
+---------------------------------------------------
+*/
+
+
+
+/*
+---------------------------------------------------
+HEADER
+---------------------------------------------------
+*/
+
+header {
+    margin-top: 12vh;
+
+    opacity: 0;
+    transform: translateY(-30vh);
+    animation: apparition 0.2s 0.3s ease-out forwards;
+}
+
+.header-carousel {
+    width: 60vw;
+}
+
+.header-carousel img {
+    border-radius: 2.7vw;
+}
+
+.slick-dots li button:before {
+    color: white;
+}
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+/*
+---------------------------------------------------
+FIN HEADER
+---------------------------------------------------
+*/
+
+
+
+/*
+---------------------------------------------------
+mini-about-us
+---------------------------------------------------
+*/
+
+.mini-about-us  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 2vh;
+
+    opacity: 0;
+    transform: translateY(30vh);
+    animation: apparition 0.2s 0.3s ease-out forwards;
+}
+
+.mini-about-us h1 {
+    font-size: 2.25vw;
+}
+
+.mini-about-us h2 {
+    font-size: 1.1vw;
+    font-weight: 300;
+    width: 55vw;
+}
+
+.mini-about-us hr {
+    background-color: white;
+    border-radius: 25%;
+    margin: 22px 0px 22px;
+    width: 20vw;
+}
+
+.mini-about-us p {
+    width: 50vw;
+    font-size: 1vw;
+}
+
+.mini-about-us button {
+    background-color: transparent;
+    border: 0.1vw solid white;
+    text-transform: uppercase;
+
+    font-size: 1.35vw;
+    font-weight: 500;
+    
+    margin-top: 2.5vh;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    border-radius: 1.5vw;
+
+    transition: 0.3s;
+}
+
+.mini-about-us button:hover {
+    background-color: rgb(200, 180, 255);
+    border: 0.1vw solid grey;
+    color: black;
+    box-shadow: 0px 0px 2.5vw grey;
+}
+
+/*
+---------------------------------------------------
+fin mini-about-us
+---------------------------------------------------
+*/
+
+
+
+/*
+---------------------------------------------------
+PROCHAINS EVENEMENT
+---------------------------------------------------
+*/
+
+.next-events {
+    width: 70vw;
+    margin-top: 15vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.next-events h2 {
+    font-size: 2.25vw;
+    margin-bottom: 2.5vh;
+    text-align: center;
+}
+
+.next-event {
+    background-color: rgb(16,0,59);
+    border: 0.1vw solid rgb(37, 0, 138);
+    border-radius: 1.5vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2vw;
+}
+
+.next-event img {
+    width: 30vw;
+    border-radius: 1.5vw;
+}
+
+.next-event-informations {
+    width: 28vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.next-event-label {
+    font-size: 1.35vw;
+    font-weight: 600;
+}
+
+.next-event-informations h3 {
+    font-size: 2vw;
+    margin-bottom: 1.6vh;
+}
+
+.next-event-informations li {
+    font-size: 1.20vw;
+}
+
+.next-event-informations button {
+    background: none;
+    border: 0.1vw solid white;
+
+    margin-top: 5vh;
+
+    font-size: 1.75vw;
+    padding: 0.75vw 1.5vw 0.75vw 1.5vw;
+    border-radius: 1.7vw;
+}
+
+.next-event-informations button:hover {
+    background-color: rgb(200, 180, 255);
+    border: 0.1vw solid grey;
+    color: black;
+    box-shadow: 0px 0px 2vw grey;
+}
+
+/*
+---------------------------------------------------
+FIN PROCHAINS EVENEMENT
+---------------------------------------------------
+*/
+
+
+
+/*
+---------------------------------------------------
+LAST EVENTS
+---------------------------------------------------
+*/
+
+.last-events {
+    margin-top: 20vh;
+    width: 80vw;
+}
+
+.last-events h2 {
+    margin-bottom: 2.5vh;
+    font-size: 2.5vw;
+    text-decoration: underline;
+}
+
+.events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events img {
+    width: 25vw;
+    border-radius: 1vw;
+    transition: 0.3s;
+}
+.events img:hover {
+    box-shadow: 0px 0px 5vw grey;
+}
+
+/*
+---------------------------------------------------
+FIN LAST EVENTS
+---------------------------------------------------
+*/
+
+
+
+/*
+---------------------------------------------------
+ABOUT US
+---------------------------------------------------
+*/
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 22.5vh;
+    width: 70vw;
+}
+
+.about-us h2 {
+    font-size: 2.25vw;
+}
+
+.about-us p {
+    margin-top: 2vh;
+    font-size: 1.5vw;
+}
+
+/*
+---------------------------------------------------
+FIN ABOUT US
+---------------------------------------------------
+*/
+
+small {
+    margin: 20vh 0vh 9vh;
+    font-size: 1vw;
+    text-align: center;
+}
+
+
+/*
+---------------------------------------------------
+FOOTER
+---------------------------------------------------
+*/
+
+
+
+@keyframes apparition {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+

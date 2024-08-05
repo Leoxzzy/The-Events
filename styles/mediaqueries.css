@@ -1,0 +1,274 @@
+@media (max-width: 850px) {
+
+    /* 
+    ---------------------------------------------------
+    NAV
+    ---------------------------------------------------
+    */
+
+    nav #title {
+        font-size: 5.5vw;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    #nav-button {
+        display: block;
+        position: fixed;
+        
+        right: 27px;
+        z-index: 3;
+        
+        background: none;
+        border: none;
+        font-size: 6.5vw;
+    }
+
+    #nav-elements-mobile {
+        background-color: rgba(16, 0, 59, 0.692);
+        display: none;
+        position: fixed;
+        z-index: 2;
+
+        width: 70%;
+        height: 100%;
+        right:  0;
+
+        text-align: center;
+        font-size: 5vw;
+
+        backdrop-filter: blur(10px);
+        box-shadow: 100px 100px 100px 500px rgba(0, 0, 0, 0.356);
+
+        opacity: 0;
+        transform: translateX(15px);
+        animation: apparition 0.2s 0.3s ease-in forwards;
+    }
+    
+    #nav-elements-mobile ul {
+        margin-top: 50%;
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+    }
+    #nav-elements-mobile li {
+        margin: 10px 0px 10px;
+    } 
+    #nav-elements-mobile a {
+        text-decoration: none;
+    }
+
+    /* 
+    ---------------------------------------------------
+    FIN NAV
+    ---------------------------------------------------
+    */
+
+
+
+    /*
+    ---------------------------------------------------
+    HEADER
+    ---------------------------------------------------
+    */
+   
+    header {
+        margin-top: 95px;
+    }
+
+    .header-carousel {
+        width: 98.9vw;
+    }
+
+    .header-carousel img {
+        border-radius: 0px;
+    }
+    
+    /*
+    ---------------------------------------------------
+    FIN HEADER
+    ---------------------------------------------------
+    */
+
+
+
+    /*
+    ---------------------------------------------------
+    SERVICE
+    ---------------------------------------------------
+    */
+
+    .mini-about-us {  
+        margin-top: 70px;
+    }
+    
+    .mini-about-us h1 {
+        font-size: 30px;
+    }
+
+    .mini-about-us p {
+        width: 90vw;
+        font-size: 17px;
+    }
+
+    .mini-about-us hr {
+        margin: 15px 0px 15px;
+    }
+
+    .mini-about-us button {
+        margin: 0;
+        font-size: 25px;
+        border-radius: 15px;
+        padding: 10px 25px 10px 25px;
+    }
+
+    /*
+    ---------------------------------------------------
+    FIN SERVICE
+    ---------------------------------------------------
+    */
+
+
+
+    /*
+    ---------------------------------------------------
+    NEXT-EVENTS
+    ---------------------------------------------------
+    */
+
+    .next-events {
+        margin-top: 60px;
+    }
+
+    .next-events h1 {
+        font-size: 20px;
+    }
+
+    .next-event {
+        flex-direction: column;
+    }
+
+    .next-event img {
+        width: 65vw;
+    }
+
+    .next-event-informations {
+        width: 90%;
+    }
+
+    .next-event-informations h1 {
+        font-size: 20px;
+    }
+
+    .next-event ul {
+        text-align: center;
+    }
+    
+    .next-event li {
+        list-style: none;
+        font-size: 15px;
+    }
+
+    .next-event-label {
+        font-size: 15px;
+    }
+
+    .next-event-description {
+        display: none;
+    }
+
+    .next-event-informations button {
+        margin: 20px 0px 15px 0px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    /*
+    ---------------------------------------------------
+    FIN NEXT-EVENTS
+    ---------------------------------------------------
+    */
+
+
+
+    /*
+    ---------------------------------------------------
+    LAST EVENTS
+    ---------------------------------------------------
+    */
+    
+    .last-events h1{
+        margin: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .events {
+        flex-direction: column;
+    }
+    .events img {
+        margin-top: 35px;
+        width: 70vw;
+        flex-direction: column;
+    }
+
+    /*
+    ---------------------------------------------------
+    FIN LAST EVENTS
+    ---------------------------------------------------
+    */
+
+
+
+    /* 
+    ---------------------------------------------------
+    ABOUT US
+    ---------------------------------------------------
+    */
+
+    .about-us {
+        margin-top: 40px;
+    }
+
+    .about-us h1 {
+        font-size: 27px;
+    }
+
+    .about-us p {
+        font-size: 17px;
+        margin: 0px;
+        width: 90vw;
+    }
+
+
+    /* 
+    ---------------------------------------------------
+    FIN ABOUT US
+    ---------------------------------------------------
+    */
+
+
+
+    /* 
+    ---------------------------------------------------
+    FOOTER
+    ---------------------------------------------------
+    */
+
+    small {
+        margin: 60px 0px 40px 0px;
+        font-size: 15px;
+    }
+
+    /* 
+    ---------------------------------------------------
+    FIN FOOTER
+    ---------------------------------------------------
+    */
+
+}
